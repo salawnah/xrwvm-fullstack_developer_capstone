@@ -43,7 +43,7 @@ class CarModel(models.Model):
             MaxValueValidator(2024),
             MinValueValidator(2010)
         ])
-    dealer_id = models.IntegerField( null=True)
+    #dealer_id = models.IntegerField(null=True)
     car_make = models.ForeignKey(CarMake,on_delete=models.CASCADE)
 
     def __str__(self):
